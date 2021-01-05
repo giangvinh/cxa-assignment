@@ -8,7 +8,8 @@ const ButtonPanel = ({ clickHandler }) => {
   return (
     <div className="component-button-panel">
       <div>
-        <Button name="clear" clickHandler={handleClick} wide />
+        <Button name="AC" clickHandler={handleClick} />
+        <Button name="0" clickHandler={handleClick} />
         <Button name="x" clickHandler={handleClick} red />
         <Button name="÷" clickHandler={handleClick} red />
       </div>

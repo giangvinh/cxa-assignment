@@ -33,7 +33,7 @@ const operate = (numberOne, numberTwo, operation) => {
 
 export const calculate = (obj, buttonName) => {
 
-  if (buttonName === "clear") {
+  if (buttonName === "AC") {
     return {
       total: null,
       next: null,
