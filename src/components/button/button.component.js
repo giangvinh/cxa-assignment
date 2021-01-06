@@ -1,7 +1,7 @@
 import React from 'react';
 import './button.styles.css';
 
-const Button = ({ name, red, wide, clickHandler }) => {
+const CustomButton = ({ name, red, wide, clickHandler }) => {
   const className = [
     'component-button',
     red ? 'red' : '',
@@ -17,4 +17,4 @@ const Button = ({ name, red, wide, clickHandler }) => {
     </div>
   );
 };
-export default Button;
+export default CustomButton;

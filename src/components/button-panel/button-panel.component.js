@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../button/button.component';
+import CustomButton from '../button/button.component';
 
 const ButtonPanel = ({ clickHandler }) => {
   const handleClick = (buttonName) => {
@@ -8,28 +8,28 @@ const ButtonPanel = ({ clickHandler }) => {
   return (
     <div className="component-button-panel">
       <div>
-        <Button name="AC" clickHandler={handleClick} />
-        <Button name="0" clickHandler={handleClick} />
-        <Button name="x" clickHandler={handleClick} red />
-        <Button name="÷" clickHandler={handleClick} red />
+        <CustomButton name="AC" clickHandler={handleClick} />
+        <CustomButton name="0" clickHandler={handleClick} />
+        <CustomButton name="x" clickHandler={handleClick} red />
+        <CustomButton name="÷" clickHandler={handleClick} red />
       </div>
       <div>
-        <Button name="7" clickHandler={handleClick} />
-        <Button name="8" clickHandler={handleClick} />
-        <Button name="9" clickHandler={handleClick} />
-        <Button name="+" clickHandler={handleClick} red />
+        <CustomButton name="7" clickHandler={handleClick} />
+        <CustomButton name="8" clickHandler={handleClick} />
+        <CustomButton name="9" clickHandler={handleClick} />
+        <CustomButton name="+" clickHandler={handleClick} red />
       </div>
       <div>
-        <Button name="4" clickHandler={handleClick} />
-        <Button name="5" clickHandler={handleClick} />
-        <Button name="6" clickHandler={handleClick} />
-        <Button name="-" clickHandler={handleClick} red />
+        <CustomButton name="4" clickHandler={handleClick} />
+        <CustomButton name="5" clickHandler={handleClick} />
+        <CustomButton name="6" clickHandler={handleClick} />
+        <CustomButton name="-" clickHandler={handleClick} red />
       </div>
       <div>
-        <Button name="1" clickHandler={handleClick} />
-        <Button name="2" clickHandler={handleClick} />
-        <Button name="3" clickHandler={handleClick} />
-        <Button name="=" clickHandler={handleClick} red />
+        <CustomButton name="1" clickHandler={handleClick} />
+        <CustomButton name="2" clickHandler={handleClick} />
+        <CustomButton name="3" clickHandler={handleClick} />
+        <CustomButton name="=" clickHandler={handleClick} red />
       </div>
     </div>
   );

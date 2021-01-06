@@ -9,9 +9,6 @@ const operate = (numberOne, numberTwo, operation) => {
   const one = Big(numberOne || "0");
   const two = Big(numberTwo || (operation === "÷" || operation === 'x' ? "1": "0")); //If dividing or multiplying, then 1 maintains current value in cases of null
   if (operation === "+") {
-    console.log(one.plus(two).toString());
-    console.log(one);
-    console.log(two);
     return one.plus(two).toString();
   }
   if (operation === "-") {
@@ -65,7 +62,6 @@ export const calculate = (obj, buttonName) => {
   }
 
   if (buttonName === "=") {
-    console.log(JSON.stringify(obj));
     if (obj.next && obj.operation) {
       return {
         total: operate(obj.total, obj.next, obj.operation),
